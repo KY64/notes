@@ -17,6 +17,7 @@
   },
   "scripts": {
     "format": "prettier -w .",
+    "minify-css": "tr -d '[:space:]' < static/css/pico.css > static/css/pico.min.css",
     "lint": "eslint --fix ."
   }
 }
