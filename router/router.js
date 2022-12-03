@@ -7,6 +7,10 @@ const router = (app) => {
     renderHomepage(req, res);
   });
 
+  app.get("/health", (req, res) => {
+    res.sendStatus(200);
+  });
+
   app.get("/post/:post", (req, res) => {
     if (new RegExp(URL_FILE_PATH).test(req.params["post"])) {
       renderPost(req, res);
