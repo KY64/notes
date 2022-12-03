@@ -1,8 +1,9 @@
+theme-switcher.js
 node_modules
 .cache
 .idea
 .sw*p
 .*~
-.css
+*.css
 
-!.min.*
+!*.min.*

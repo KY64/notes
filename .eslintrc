@@ -17,6 +17,12 @@
     "ecmaVersion": "latest"
   },
   "rules": {
+    "no-console": ["error"],
+    "no-shadow": ["error"],
+    "sort-imports": ["error"],
+    "prefer-const": ["warn"],
+    "no-mixed-operators": ["error"],
+    "no-magic-numbers": ["warn"],
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
