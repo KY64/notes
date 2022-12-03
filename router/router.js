@@ -1,4 +1,4 @@
-const { HTTP_NOT_FOUND, URL_FILE_PATH } = require("../lib/constant");
+const { HTTP_OK, HTTP_NOT_FOUND, URL_FILE_PATH } = require("../lib/constant");
 const { renderPost } = require("../controller/renderPost");
 const { renderHomepage } = require("../controller/renderHomepage");
 
@@ -8,7 +8,7 @@ const router = (app) => {
   });
 
   app.get("/health", (req, res) => {
-    res.sendStatus(200);
+    res.sendStatus(HTTP_OK);
   });
 
   app.get("/post/:post", (req, res) => {
