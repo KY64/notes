@@ -1,7 +1,0 @@
-= Test Title
-:attributes1: value1
-:attributes2: value2
-
-== Test Subtitle
-
-This is the content

@@ -1,9 +1,17 @@
-theme-switcher.js
-node_modules
-.cache
 .idea
-.sw*p
-.*~
+.DS_Store
+src/lib/posts.json
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 *.css
+*.sw*
+.*~
 
-!*.min.*
+!.env.example
+!*.min.css
