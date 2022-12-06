@@ -30,6 +30,12 @@ const config = {
 			$$: './src/components'
 		},
 		adapter: adapter(),
+		csp: {
+			directives: {
+				'script-src': ['self']
+			},
+			mode: 'hash'
+		},
 		prerender: {
 			entries: posts
 		}

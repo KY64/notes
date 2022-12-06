@@ -8,12 +8,16 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>KY Mind</title>
+</svelte:head>
+
 <div class="flex-center">
 	<main class="container">
 		<h1 class="unit-0">Hi, I'm Excel</h1>
-		<h4 class="top-gap-0 light-font">
+		<h2 class="h4 top-gap-0 light-font">
 			Software Engineer specialized in building API and writing automation script
-		</h4>
+		</h2>
 		<a href="https://github.com/ky64" target="_blank" rel="noreferrer">
 			<Github width={icon_size} height={icon_size} />
 		</a>
@@ -23,9 +27,9 @@
 		</a>
 		<section>
 			{#each Object.values(data) as post}
-				<h5>
+				<h1 class="h4">
 					<a href={post.slug}>{post.title}</a>
-				</h5>
+				</h1>
 				<small class="top-gap-0">{post.create_date}</small>
 				<p class="top-gap-0">{post.description}</p>
 			{/each}
