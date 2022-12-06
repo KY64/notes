@@ -1,31 +1,31 @@
 {
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es2021": true,
-    "node": true
-  },
-  "plugins": ["prettier"],
-  "extends": ["eslint:recommended", "prettier"],
-  "overrides": [
-    {
-      "files": ["**/*.js"],
-      "excludedFiles": ["node_modules/**", "static/*"]
-    }
-  ],
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
-  "rules": {
-    "no-console": ["error"],
-    "no-shadow": ["error"],
-    "sort-imports": ["error"],
-    "prefer-const": ["warn"],
-    "no-mixed-operators": ["error"],
-    "no-magic-numbers": ["warn"],
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "double"],
-    "semi": ["error", "always"]
-  }
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es2021": true,
+		"node": true
+	},
+	"plugins": ["prettier"],
+	"extends": ["eslint:recommended", "prettier"],
+	"overrides": [
+		{
+			"files": ["**/*.js"],
+			"excludedFiles": ["node_modules/**", "static/*"]
+		}
+	],
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"rules": {
+		"no-console": ["error"],
+		"no-shadow": ["error"],
+		"sort-imports": ["error"],
+		"prefer-const": ["warn"],
+		"no-mixed-operators": ["error"],
+		"no-magic-numbers": ["warn"],
+		"indent": ["error", 2],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"]
+	}
 }
